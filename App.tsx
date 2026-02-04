@@ -9,7 +9,7 @@ import {
 import { CATEGORIES, normalizeString } from './constants';
 import { Transaction, CreditCard, User, PaymentMethod, TransactionType, Notification } from './types';
 
-import Dashboard from './src/pages/Dashboard';
+import Dashboard from './pages/Dashboard';
 import TransactionsPage from './pages/Transactions';
 import AnalyticsPage from './pages/Analytics';
 import SettingsPage from './pages/Settings';
