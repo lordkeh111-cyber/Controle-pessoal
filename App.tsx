@@ -9,10 +9,10 @@ import {
 import { CATEGORIES, normalizeString } from './constants';
 import { Transaction, CreditCard, User, PaymentMethod, TransactionType, Notification } from './types';
 
-import Dashboard from './pages/Dashboard';
-import TransactionsPage from './pages/Transactions';
-import AnalyticsPage from './pages/Analytics';
-import SettingsPage from './pages/Settings';
+import Dashboard from './Dashboard';
+import TransactionsPage from './Transactions';
+import AnalyticsPage from './Analytics';
+import SettingsPage from './Settings';
 
 // --- HELPER PARA INPUT MONETÁRIO ---
 const formatCurrencyInput = (value: string) => {
