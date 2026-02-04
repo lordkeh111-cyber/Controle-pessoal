@@ -1,4 +1,25 @@
+import { useEffect, useState } from "react";
 
+export default function App() {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") || "light"
+  );
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  return (
+    <button
+      onClick={() =>
+        setTheme(theme === "light" ? "dark" : "light")
+      }
+    >
+      Mudar tema
+    </button>
+  );
+}
 import React, { useState, useEffect, useMemo } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { 
