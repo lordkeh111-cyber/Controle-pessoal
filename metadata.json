@@ -1,0 +1,8 @@
+{
+  "name": "Controle Pessoal",
+  "description": "Um aplicativo moderno de controle financeiro com foco em clareza, organização e análises inteligentes de gastos e ganhos.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
