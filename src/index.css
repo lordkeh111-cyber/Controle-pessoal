@@ -1,8 +1,15 @@
+/* Transição suave entre temas */
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Tema claro */
 body.light {
   background: #ffffff;
   color: #000;
 }
 
+/* Tema escuro */
 body.dark {
   background: #121212;
   color: #fff;
