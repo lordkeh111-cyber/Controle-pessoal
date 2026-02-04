@@ -1,16 +1,17 @@
-const getGreeting = () => {
-  const hour = new Date().getHours();
-
-  if (hour < 12) return "Bom dia ☀️";
-  if (hour < 18) return "Boa tarde 🌤️";
-  return "Boa noite 🌙";
-};
 import { useState } from "react";
 
 export default function Profile() {
   const [photo, setPhoto] = useState(
     localStorage.getItem("photo")
   );
+
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+
+    if (hour < 12) return "Bom dia ☀️";
+    if (hour < 18) return "Boa tarde 🌤️";
+    return "Boa noite 🌙";
+  };
 
   const handlePhoto = (e: any) => {
     const file = e.target.files[0];
@@ -33,6 +34,9 @@ export default function Profile() {
       />
 
       <input type="file" onChange={handlePhoto} />
+
+      {/* STATUS DINÂMICO */}
+      <p>{getGreeting()}</p>
     </>
   );
 }
